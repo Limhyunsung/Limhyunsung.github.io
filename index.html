@@ -1,27 +1,176 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인테리어 홍보 사이트</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interior Design - Home</title>
+  <!-- 폰트 및 아이콘, CSS 등을 연결할 수 있습니다.
+       예: Google Fonts, Font Awesome 등 -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- 헤더 & 내비게이션 -->
   <header>
-    <h1>환영합니다!</h1>
-    <p>인테리어 디자인 포트폴리오 사이트입니다.</p>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">INTERIOR LOGO</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  
-  <section id="gallery">
-    <h2>갤러리</h2>
-    <!-- 이미지 갤러리 영역 -->
-    <img src="sample.jpg" alt="인테리어 디자인 예시">
+
+  <!-- 메인 비주얼 (Hero Section) -->
+  <section class="hero" style="background-image: url('hero-bg.jpg');">
+    <!-- hero-bg.jpg 자리에 큰 거실 인테리어 이미지를 배경으로 사용 -->
+    <div class="hero-overlay">
+      <h1>Modern Interior Design</h1>
+      <p>Transforming Spaces, Elevating Experiences</p>
+      <a href="#services" class="btn-cta">Explore Services</a>
+    </div>
   </section>
-  
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="section-title">
+      <h2>SERVICES</h2>
+      <p>We offer a range of interior design solutions for your home and business.</p>
+    </div>
+    <div class="services-container">
+      <article class="service-item">
+        <img src="service1.jpg" alt="Residential Interior" />
+        <h3>Residential Design</h3>
+        <p>Experience comfort and luxury in your own home with our personalized designs.</p>
+      </article>
+      <article class="service-item">
+        <img src="service2.jpg" alt="Commercial Interior" />
+        <h3>Commercial Design</h3>
+        <p>Enhance your brand identity and create a memorable experience for your customers.</p>
+      </article>
+      <article class="service-item">
+        <img src="service3.jpg" alt="Renovation Service" />
+        <h3>Renovation & Remodeling</h3>
+        <p>Reinvent your space with modern layouts, materials, and finishes.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="section-title">
+      <h2>PORTFOLIO</h2>
+      <p>Explore some of our recent projects and see how we can transform your space.</p>
+    </div>
+    <div class="portfolio-gallery">
+      <!-- 아래 이미지는 예시입니다. 필요에 따라 추가/삭제/배열 변경하세요. -->
+      <div class="portfolio-item">
+        <img src="portfolio1.jpg" alt="Portfolio Sample 1" />
+        <h4>Modern Living Room</h4>
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio2.jpg" alt="Portfolio Sample 2" />
+        <h4>Luxury Bedroom</h4>
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio3.jpg" alt="Portfolio Sample 3" />
+        <h4>Office Space Design</h4>
+      </div>
+      <div class="portfolio-item">
+        <img src="portfolio4.jpg" alt="Portfolio Sample 4" />
+        <h4>Retail Store Renovation</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="section-title">
+      <h2>ABOUT US</h2>
+      <p>Learn more about our vision, mission, and the team behind our success.</p>
+    </div>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="about-us.jpg" alt="Team Photo or Office" />
+      </div>
+      <div class="about-text">
+        <h3>Our Philosophy</h3>
+        <p>
+          We believe in designing spaces that not only look stunning but also
+          offer comfort and functionality. Our team of dedicated professionals
+          works closely with clients to understand their vision and transform
+          it into reality.
+        </p>
+        <ul>
+          <li>Customized design solutions</li>
+          <li>High-quality materials</li>
+          <li>Attention to detail</li>
+          <li>Professional project management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review Section -->
+  <section id="review" class="review-section">
+    <div class="section-title">
+      <h2>CLIENT REVIEWS</h2>
+      <p>Hear what our satisfied clients have to say about our services.</p>
+    </div>
+    <div class="review-container">
+      <article class="review-item">
+        <p class="review-text">“Amazing work! My living room feels so cozy and modern now.”</p>
+        <p class="review-author">- Kim, Seoul</p>
+      </article>
+      <article class="review-item">
+        <p class="review-text">“Their attention to detail is incredible. Highly recommend!”</p>
+        <p class="review-author">- Park, Busan</p>
+      </article>
+      <article class="review-item">
+        <p class="review-text">“Professional team and great results. Will hire them again!”</p>
+        <p class="review-author">- Lee, Incheon</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-title">
+      <h2>CONTACT</h2>
+      <p>Ready to transform your space? Get in touch with us today!</p>
+    </div>
+    <div class="contact-container">
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <h3>Our Office</h3>
+        <p>123 Interior Ave, Design City, Korea</p>
+        <p>Phone: 010-1234-5678</p>
+        <p>Email: info@interiordesign.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
   <footer>
-    <p>&copy; 2025 인테리어 디자인</p>
+    <p>&copy; 2025 Interior Design. All rights reserved.</p>
   </footer>
-  
+
+  <!-- JS 스크립트 연결 -->
   <script src="script.js"></script>
 </body>
 </html>
